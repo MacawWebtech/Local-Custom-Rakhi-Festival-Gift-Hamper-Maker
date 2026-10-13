@@ -1,0 +1,16 @@
+Tyohaar alignment and browser audit
+
+All 16 HTML pages preserve their visible text. Original style.css and scripts
+remain intact. Added text-alignment.css and text-alignment.js align peer card
+headings and body text, price/action rows, headings, and responsive wrapping.
+
+The contact page included a listener for an area-form that no longer exists.
+A separate contact-page-checked.js guards that optional form; the original
+contact-page.js is preserved. contact.html loads the checked copy.
+
+Browser: headless Chrome. Tested 375px mobile, 768px tablet, and 1440px desktop,
+with light and dark themes (96 page configurations). No horizontal page
+overflow, horizontally clipped heading/paragraph text, or JavaScript errors.
+Global search panel, responsive navigation, and theme controls checked on all
+pages at all widths. Shop search for rakhi produced five visible results.
+This is a browser smoke audit; live commerce or external delivery was not tested.

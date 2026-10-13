@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#B10B51">
+
+    <title>Tyohaar | Gifts Made Personal</title>
+
+    <meta
+        name="description"
+        content="Explore handmade rakhis, thoughtful festival gifts and personalized hampers. Create a gift around the people you love."
+    >
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        try {
+            document.documentElement.dataset.theme =
+                localStorage.getItem('tyohaar-theme') ||
+                (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+        } catch (e) {}
+    </script>
+
+    <link rel="stylesheet" href="assets/css/text-alignment.css">
+    <script defer src="assets/js/text-alignment.js"></script>
+</head>
+
+<body class="home-two">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="announcement">
+        A little thread. A whole lot of love.
+        <a href="#rakhi">Discover the Rakhi edit ↗</a>
+    </div>
+
+    <header>
+        <div class="masthead">
+            <a href="index.html" class="brand" aria-label="TYOHAAR home">
+                <img
+                    class="brand-mark"
+                    src="assets/images/favicon.svg"
+                    width="38"
+                    height="38"
+                    alt=""
+                >
+
+                <span class="brand-type">
+                    tyohaar
+                    <span class="brand-tagline">THE GIFTING STUDIO</span>
+                </span>
+            </a>
+
+            <div class="tools">
+                <button id="search-toggle" aria-label="Find a gift">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.5" cy="10.5" r="6.5"/>
+                        <path d="m16 16 5 5"/>
+                    </svg>
+                </button>
+
+                <button id="theme-toggle" aria-label="Switch color theme">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="8"/>
+                        <path d="M12 4v16"/>
+                        <path
+                            d="M12 4a8 8 0 0 1 0 16"
+                            fill="currentColor"
+                            stroke="none"
+                        />
+                    </svg>
+                </button>
+
+                <button
+                    id="rtl-toggle"
+                    aria-label="Mirror layout"
+                    aria-pressed="false"
+                >
+                    RTL
+                </button>
+
+                <button
+                    id="menu-toggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <nav id="nav" aria-label="Primary navigation">
+            <details class="home-dropdown">
+                <summary>Home</summary>
+
+                <div>
+                    <a href="index.html">Home 1</a>
+                    <a href="home-2.html">Home 2</a>
+                </div>
+            </details>
+
+            <details class="home-dropdown services-dropdown">
+                <summary>Services</summary>
+
+                <div>
+                    <a href="services.html">Gifting Services</a>
+                    <a href="service-details.html">Service Details</a>
+                    <a href="festive-collections.html">Festive Collections</a>
+                    <a href="pricing-guide.html">Pricing Guide</a>
+                    <a href="blog.html">Gifting Journal</a>
+                </div>
+            </details>
+
+            <a href="shop.html">Products</a>
+            <a href="custom-hamper.html">Custom Hamper</a>
+            <a href="corporate-gifts.html">Bulk Corporate Orders</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="nav-login">Login ↗</a>
+        </nav>
+
+        <form class="search-panel" id="search-form" hidden>
+            <a class="search-brand" href="#main" aria-label="Tyohaar home">
+                <img
+                    src="assets/images/favicon.svg"
+                    width="44"
+                    height="44"
+                    alt=""
+                >
+
+                <span>Tyohaar</span>
+            </a>
+
+            <label for="gift-search">What are you celebrating?</label>
+
+            <input
+                id="gift-search"
+                type="search"
+                placeholder="Search rakhi, hamper, corporate…"
+            >
+
+            <button class="button" type="submit">Find gifts ↗</button>
+
+            <p id="search-message" aria-live="polite"></p>
+        </form>
+    </header>
+
+    <main id="main">
+        <section class="section h2-hero">
+            <span class="eyebrow">
+                A CELEBRATION OF THE PEOPLE YOU LOVE
+            </span>
+
+            <h1>
+                Not just a gift.
+                <br>
+                <em>A little piece of you.</em>
+            </h1>
+
+            <p>
+                Start with a person. Add a memory. Wrap it in something beautiful.
+            </p>
+
+            <div class="gift-compass">
+                <span>MAKE THEIR DAY</span>
+                <a href="#rakhi">A thread of love ↗</a>
+                <a href="#hampers">A box of favourites ↗</a>
+                <a href="custom-hamper.html">
+                    Something only you could make ↗
+                </a>
+            </div>
+
+            <div class="h2-gallery">
+                <figure>
+                    <img
+                        src="assets/images/home2-signature.jpg"
+                        alt="Handmade signature rakhi"
+                        width="1000"
+                        height="800"
+                        loading="lazy"
+                    >
+
+                    <figcaption>HANDMADE THREADS</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/images/home2-personalized.jpg"
+                        alt="Personalized keepsake box"
+                        width="1000"
+                        height="800"
+                        loading="lazy"
+                    >
+
+                    <figcaption>PERSONAL LITTLE DETAILS</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/images/home2-festival.jpg"
+                        alt="Festive rakhi motif"
+                        width="1000"
+                        height="800"
+                        loading="lazy"
+                    >
+
+                    <figcaption>FESTIVE CONNECTIONS</figcaption>
+                </figure>
+            </div>
+
+            <a class="button" href="custom-hamper.html">
+                Create a personal gift ↗
+            </a>
+        </section>
+
+        <section id="rakhi" class="section h2-signature">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">SIGNATURE HANDMADE RAKHIS</span>
+
+                    <h2>
+                        The smallest gesture.
+                        <br>
+                        The strongest bond.
+                    </h2>
+                </div>
+
+                <p>
+                    Find a thread for your shared stories,
+                    <br>
+                    inside jokes and lifelong connection.
+                </p>
+            </div>
+
+            <div class="signature-list">
+                <button data-product="The Memory Thread" data-price="299">
+                    <span>01</span>
+                    <h3>The Memory Thread</h3>
+                    <p>A simple handmade rakhi with a personal gift note.</p>
+                    <span>₹299 ↗</span>
+                </button>
+
+                <button data-product="The Initial Connection" data-price="399">
+                    <span>02</span>
+                    <h3>The Initial Connection</h3>
+                    <p>Their initial, your message, one meaningful keepsake.</p>
+                    <span>₹399 ↗</span>
+                </button>
+
+                <button data-product="The Family Bond" data-price="699">
+                    <span>03</span>
+                    <h3>The Family Bond</h3>
+                    <p>A coordinated rakhi set for a shared celebration.</p>
+                    <span>₹699 ↗</span>
+                </button>
+            </div>
+
+            <p class="pricing-note">
+                Starting prices; final details are confirmed with your enquiry.
+            </p>
+        </section>
+
+        <section id="hampers" class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">PERSONALIZED GIFT COLLECTIONS</span>
+                    <h2>A keepsake of your kindness.</h2>
+                </div>
+
+                <a class="text-button" href="custom-hamper.html">
+                    Add your personal touch ↗
+                </a>
+            </div>
+
+            <div class="h2-collection">
+                <div>
+                    <img
+                        src="assets/images/home2-keepsake.jpg"
+                        alt="Ribbon-tied personalized gift box"
+                        width="1000"
+                        height="800"
+                        loading="lazy"
+                    >
+                </div>
+
+                <article>
+                    <span class="eyebrow">THE PERSONAL EDIT</span>
+
+                    <h3>
+                        Their name.
+                        <br>
+                        Your thoughtfulness.
+                    </h3>
+
+                    <p>
+                        Combine a keepsake box with chocolates, sweets or dry fruits.
+                        Finish with initials and a message that belongs to your story.
+                    </p>
+
+                    <a class="button" href="custom-hamper.html">
+                        Choose their favourites ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="section h2-craft">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">HANDMADE CRAFTSMANSHIP</span>
+                    <h2>A closer look at the little things.</h2>
+                </div>
+            </div>
+
+            <div class="craft-grid">
+                <img
+                    src="assets/images/home2-craft.jpg"
+                    alt="Rakhi craftsmanship detail"
+                    width="1000"
+                    height="800"
+                    loading="lazy"
+                >
+
+                <article>
+                    <h3>Threads with intention.</h3>
+
+                    <p>
+                        Choose motifs, initials and finishes that reflect the recipient.
+                        A handmade gift begins with paying attention to what makes them
+                        who they are.
+                    </p>
+
+                    <div class="detail-row">
+                        <span>01</span>
+                        <span>Select a meaningful motif</span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>02</span>
+                        <span>Make space for a memory</span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>03</span>
+                        <span>Choose a finish they’ll keep</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="occasions" class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FESTIVAL GIFT BUNDLES</span>
+                    <h2>Every season has a reason.</h2>
+                </div>
+            </div>
+
+            <div class="festival-pills">
+                <a href="custom-hamper.html">Raksha Bandhan ↗</a>
+                <a href="custom-hamper.html">Diwali ↗</a>
+                <a href="custom-hamper.html">Bhai Dooj ↗</a>
+                <a href="custom-hamper.html">Pongal ↗</a>
+                <a href="custom-hamper.html">Housewarming ↗</a>
+                <a href="custom-hamper.html">New Year ↗</a>
+            </div>
+        </section>
+
+        <section class="section h2-packaging">
+            <div>
+                <img
+                    src="assets/images/home2-packaging.jpg"
+                    alt="Keepsake packaging and ribbon"
+                    width="1000"
+                    height="800"
+                    loading="lazy"
+                >
+            </div>
+
+            <article>
+                <span class="eyebrow">THE PACKAGING SHOWCASE</span>
+                <h2>Let the first impression linger.</h2>
+
+                <p>
+                    A coordinated ribbon, a handwritten-style note, a reusable keepsake
+                    box. Select the finish that makes the whole gift feel complete.
+                </p>
+
+                <a class="text-button" href="custom-hamper.html">
+                    Choose your finishing touches ↗
+                </a>
+            </article>
+        </section>
+
+        <section id="gift-finder" class="section recipients">
+            <div>
+                <span class="eyebrow">FOR YOUR FAVOURITE PEOPLE</span>
+                <h2>Who’s on your mind?</h2>
+            </div>
+
+            <div class="recipient-buttons">
+                <button data-recipient="Brother">For your brother ↗</button>
+                <button data-recipient="Sister">For your sister ↗</button>
+                <button data-recipient="Family">For the family ↗</button>
+                <button data-recipient="Friend">For a dear friend ↗</button>
+            </div>
+
+            <p id="recipient-result" aria-live="polite">
+                Choose a recipient to discover a thoughtful pairing.
+            </p>
+        </section>
+
+        <section class="section stories">
+            <span class="eyebrow">CUSTOMER STORIES</span>
+            <h2>Some moments stay with you.</h2>
+
+            <p>
+                A sibling’s surprise. A friend’s favourite treat. A note saved for years.
+                <br>
+                Share the story behind your most meaningful gift.
+            </p>
+
+            <button
+                class="text-button"
+                data-product="Share a gifting story"
+                data-price="0"
+            >
+                Tell us your story ↗
+            </button>
+        </section>
+
+        <section id="corporate" class="section corporate">
+            <div>
+                <span class="eyebrow">THOUGHTFUL, AT EVERY SCALE</span>
+
+                <h2>
+                    A thank you.
+                    <br>
+                    With your name on it.
+                </h2>
+
+                <p>
+                    Bring a personal touch to employee celebrations and client gifts
+                    with coordinated hampers, gift notes and branded packaging.
+                </p>
+
+                <button
+                    class="button"
+                    data-product="Corporate gifting"
+                    data-price="0"
+                >
+                    Plan your corporate gifts ↗
+                </button>
+
+                <span class="corporate-note">
+                    Share your quantity, occasion and budget for a tailored quote.
+                </span>
+            </div>
+
+            <img
+                src="assets/images/corporate.jpg"
+                alt="Ribbon-wrapped corporate gifting box"
+                width="1000"
+                height="800"
+                loading="lazy"
+            >
+        </section>
+
+        
+        <section id="builder" class="section builder-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOU KNOW THEM BEST</span>
+                    <h2>Build a box that feels like them.</h2>
+                </div>
+
+                <p>
+                    Choose a few favourites.
+                    <br>
+                    We’ll help bring the details together.
+                </p>
+            </div>
+
+            <div class="builder">
+                <form id="builder-form">
+                    <div class="builder-fields">
+                        <label>
+                            01 / The occasion
+
+                            <select id="occasion">
+                                <option>Raksha Bandhan</option>
+                                <option>Diwali</option>
+                                <option>Bhai Dooj</option>
+                                <option>Wedding</option>
+                                <option>Housewarming</option>
+                                <option>Just because</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            02 / The gift box
+
+                            <select id="packaging">
+                                <option value="150">Classic box — ₹150</option>
+                                <option value="300">Keepsake box — ₹300</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <fieldset>
+                        <legend>03 / Fill it with favourites</legend>
+
+                        <div class="item-choices">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    value="249"
+                                    data-name="Handmade rakhi"
+                                    checked
+                                >
+                                Handmade rakhi
+                                <span>₹249</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    value="350"
+                                    data-name="Chocolates"
+                                >
+                                Chocolates
+                                <span>₹350</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    value="450"
+                                    data-name="Dry fruits"
+                                >
+                                Dry fruits
+                                <span>₹450</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    value="300"
+                                    data-name="Sweets"
+                                >
+                                Sweets
+                                <span>₹300</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <label>
+                        04 / A note from you
+
+                        <textarea
+                            id="gift-note"
+                            maxlength="250"
+                            placeholder="Some things are better handwritten…"
+                            rows="3"
+                        ></textarea>
+                    </label>
+                </form>
+
+                <aside class="summary">
+                    <span class="eyebrow">YOUR LITTLE BOX OF LOVE</span>
+
+                    <div class="box-symbol">✳</div>
+
+                    <h3 id="summary-occasion">Raksha Bandhan</h3>
+                    <p id="summary-items">Handmade rakhi</p>
+
+                    <div class="total">
+                        <span>Estimated total</span>
+                        <strong id="total">₹399</strong>
+                    </div>
+
+                    <p>Final details confirmed after enquiry.</p>
+
+                    <button class="button" id="builder-enquiry">
+                        Enquire about this hamper ↗
+                    </button>
+
+                    <p id="builder-error" role="status"></p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section h2-inspiration">
+            <span class="eyebrow">SEASONAL INSPIRATION</span>
+            <h2>Start with what they love.</h2>
+
+            <div class="inspiration-grid">
+                <article>
+                    <h3>For the sweet tooth</h3>
+
+                    <p>
+                        Pair chocolates with a message about a favourite shared.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>For the keepsake</h3>
+
+                    <p>
+                        Choose initials and packaging that becomes part.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>For the whole family</h3>
+
+                    <p>
+                        Fill a hamper with treats to share and a note for everyone.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section contact">
+            <span class="eyebrow">FROM A MEMORY TO A GIFT</span>
+            <h2>Turn your thought into their favourite surprise.</h2>
+
+            <p>
+                Share the person, a favourite memory and the details you would like
+                to include.
+            </p>
+
+            <form id="contact-form">
+                <div class="contact-fields">
+                    <label>
+                        Your name
+
+                        <input
+                            name="name"
+                            required
+                            autocomplete="name"
+                            placeholder="Name"
+                        >
+                    </label>
+
+                    <label>
+                        Email address
+
+                        <input
+                            name="email"
+                            type="email"
+                            required
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                        >
+                    </label>
+                </div>
+
+                <label>
+                    Your gifting idea
+
+                    <textarea
+                        name="message"
+                        required
+                        rows="3"
+                        placeholder="Tell us a little about your gift…"
+                    ></textarea>
+                </label>
+
+                <button class="button" type="submit">
+                    Personalize my gift ↗
+                </button>
+
+                <p id="contact-status" role="status">
+                    Your enquiry can be downloaded and shared with the maker.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img
+                        class="brand-mark"
+                        src="assets/images/favicon.svg"
+                        width="38"
+                        height="38"
+                        alt=""
+                    >
+
+                    <span class="brand-type">
+                        tyohaar
+                        <span class="brand-tagline">THE GIFTING STUDIO</span>
+                    </span>
+                </a>
+
+                <p>
+                    For the bonds we cherish.
+                    <br>
+                    For the moments we celebrate.
+                </p>
+
+                <p class="footer-location">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path
+                            d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"
+                        />
+                        <circle cx="12" cy="9.5" r="2.5"/>
+                    </svg>
+
+                    <span>Edison, New Jersey, USA</span>
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Discover</h3>
+                <a href="#rakhi">Handmade Rakhis</a>
+                <a href="#hampers">Gift Hampers</a>
+                <a href="festive-collections.html">Festive Collections</a>
+                <a href="blog.html">Gifting Journal</a>
+                <a href="pricing-guide.html">Pricing Guide</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Make it personal</h3>
+                <a href="custom-hamper.html">Build Your Hamper</a>
+                <a href="corporate-gifts.html">Corporate Gifting</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Get in Touch</a>
+                <a href="login.html" class="account-link">My account</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>
+                © <span id="year"></span> TYOHAAR. Made for meaningful moments.
+            </span>
+
+            <a href="#main">Back to the top ↑</a>
+        </div>
+    </footer>
+
+    <dialog id="gift-dialog">
+        <button class="dialog-close" aria-label="Close dialog">×</button>
+
+        <span class="eyebrow" id="dialog-eyebrow">A THOUGHTFUL CHOICE</span>
+
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-copy"></p>
+
+        <a class="button" href="#contact" id="dialog-enquire">
+            Personalize & enquire ↗
+        </a>
+    </dialog>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+</body>
+</html>
